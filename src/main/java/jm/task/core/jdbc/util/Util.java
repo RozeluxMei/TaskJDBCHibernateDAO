@@ -21,7 +21,7 @@ public class Util {
     private static String url = "jdbc:mysql://localhost:3306/learning";
     private static String user = "root";
     private static String password = "root";
-    private static String dialect = "org.hibernate.dialect.MySQLDialect";
+    private static String dialect = "org.hibernate.dialect.MySQL5Dialect";
 
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null){
@@ -46,7 +46,6 @@ public class Util {
                         applySettings(configuration.getProperties()).build();
 
                 sessionFactory = configuration.buildSessionFactory(serviceRegistry);
-
 
             } catch (Exception e){
                 System.out.println("SessionFactory failed");
