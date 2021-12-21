@@ -17,11 +17,11 @@ public class Main {
         usi.saveUser("John","Dorian", (byte) 99);
         usi.saveUser("John","Hancock", (byte) 29);
 
-        List<User> users = usi.getAllUsers();
+/*        List<User> users = usi.getAllUsers();
         users.forEach(System.out::println);
 
         usi.cleanUsersTable();
-        usi.dropUsersTable();
+        usi.dropUsersTable();*/
 
 
     }
